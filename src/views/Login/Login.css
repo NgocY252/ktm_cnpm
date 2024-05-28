@@ -1,0 +1,62 @@
+.login-form-container {
+  background-color: #f8d7da; /* Chọn màu nền tùy ý hoặc dựa trên thiết kế */
+  padding: 20px;
+  border-radius: 8px;
+  width: 480px; /* Hoặc kích thước phù hợp với thiết kế của bạn */
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top:120px;
+}
+
+.login-form-container h2 {
+  color: #ff6b6b;
+  text-align: center;
+}
+
+.login-form-container p {
+  text-align: center;
+  color: #333;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.login-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.login-form-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form-container button {
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 80px;
+  margin-left: 187px;
+}
+
+.login-form-container button:hover {
+  background-color: #cc5c5c;
+}
+.error {
+  color: red; /* Or any other color you want for error messages */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}

@@ -1,0 +1,13 @@
+.customer-list {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+.btn-delete-customer {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #ff6961;
+}

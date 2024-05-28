@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #e6b1d4;
+}
+.user-icon {
+  position: absolute;
+  right: 30px; /* Đặt vào góc phải */
+  top: 50%; /* Đặt giữa theo chiều dọc */
+  transform: translateY(-50%); /* Canh giữa theo chiều dọc */
+  font-size: 1.5em; /* Thay đổi kích thước nếu cần */
+}
+
+/* Định dạng cho container chứa bảng */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto; /* Đảm bảo bảng có thể cuộn nếu nội dung quá rộng */
+  
+}
+
+/* Định dạng chung cho bảng */
+table {
+  width: 100%; /* Bảng chiếm toàn bộ chiều rộng của container */
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+  margin-top: 20px;
+}
+
+/* Định dạng cho tiêu đề bảng */
+thead {
+  background-color: #007bff; /* Màu nền cho tiêu đề bảng */
+  color: white; /* Màu chữ cho tiêu đề bảng */
+}
+
+/* Định dạng cho các hàng trong tiêu đề */
+thead th {
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* Định dạng cho các hàng và ô dữ liệu */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Màu nền cho hàng lẻ */
+}
+
+tbody tr:hover {
+  background-color: #ddd; /* Màu nền khi di chuột qua hàng */
+}
+
+td, th {
+  padding: 8px; /* Khoảng cách xung quanh nội dung trong mỗi ô */
+  border: 1px solid #ddd; /* Đường viền cho mỗi ô */
+  text-align: left; /* Căn lề trái cho nội dung ô */
+}
+
+/* Định dạng cho phần tiêu đề và icon */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}

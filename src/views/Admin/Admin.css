@@ -1,0 +1,164 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #e8bfe3; /* Màu nền mềm mại cho sidebar */
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Thêm hiệu ứng chuyển tiếp cho nền */
+}
+
+.sidebar button:hover {
+  background-color: #ddd; /* Màu khi hover */
+}
+
+.sidebar button.active {
+  color: white;
+  background-color: #007bff; /* Màu cho button đang active */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Cải thiện table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  box-shadow: 0 2px 3px #ccc;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #e8bfe3; /* Màu nền phù hợp với sidebar */
+  color: #333; /* Màu chữ tối để tăng độ tương phản */
+}
+
+td {
+  padding: 8px;
+  text-align: center; /* Canh giữa nội dung */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Màu xen kẽ cho từng hàng */
+}
+
+/* Cải thiện button styles */
+button[type="a"] {
+  color: white;
+  background-color: #a79cf3; /* Màu sắc cho nút */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Màu xanh lá cho nút lưu và thêm mới */
+}
+
+button[type="l"] {
+  color: white;
+}
+button:hover {
+  background-color: darken(#998cec, 10%); /* Màu sẫm hơn khi hover */
+}
+
+/* Style cho form nhập liệu */
+.form-qlsp {
+  display: flex;
+  flex-direction: row; /* Đổi thành row để input và button nằm cạnh nhau */
+  align-items: center; /* Căn giữa các items theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các thành phần */
+  margin-bottom: 1em;
+}
+
+.code-input,
+.name-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 30%; /* Chiều rộng của input */
+  gap: 20px;
+}
+
+/* Nút Lưu và Thêm mới sẽ nổi bật hơn */
+
+/* Hiển thị thông báo lỗi hoặc xác nhận */
+.alert {
+  padding: 10px;
+  color: white;
+  background-color: #dc3545; /* Màu đỏ cho thông báo lỗi */
+  border-radius: 3px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.alert.success {
+  background-color: #28a745; /* Màu xanh lá cho thông báo thành công */
+}
+
+.alert.hidden {
+  display: none;
+}
+
+.edit-btn {
+  color: #fff;
+  background-color: #a79cf3; /* Màu nền xanh lá cho nút sửa */
+  padding: 8px 15px;
+  margin-right: 10px; /* Thêm một chút khoảng cách giữa nút Sửa và các nút khác */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #9184e8; /* Màu sẫm hơn khi hover */
+}
+.image-column {
+  width: 10%; /* Hoặc bất kỳ phần trăm nào bạn muốn */
+}
+
+.edit-button {
+  /* CSS styles for edit button */
+  background-color: #9184e8;
+  color: white;
+  margin-top: 5px;
+  /* other styles */
+}
+
+.delete-button {
+  /* CSS styles for delete button */
+  background-color: #9184e8;
+  color: white;
+  margin-top: 5px;
+  /* other styles */
+}
+.serch-input {
+  margin-left: 900px;
+  width: 290px;
+}

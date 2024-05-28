@@ -1,0 +1,32 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 90px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #3269d5;
+  min-height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+}
+
+.App-nav a {
+  color: #cc72ef;
+  margin: 0 25px;
+  text-decoration: none;
+}
+
+.App-main {
+  margin-top: 220px;
+}
+
+/* Rest of the styles */

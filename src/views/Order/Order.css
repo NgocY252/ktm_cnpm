@@ -1,0 +1,318 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #e6b1d4;
+}
+.user-icon {
+  position: absolute;
+  right: 30px; /* Đặt vào góc phải */
+  top: 50%; /* Đặt giữa theo chiều dọc */
+  transform: translateY(-50%); /* Canh giữa theo chiều dọc */
+  font-size: 1.5em; /* Thay đổi kích thước nếu cần */
+}
+
+.manage-text {
+  position: relative; /* Cho phép dropdown-menu được định vị tương đối với chữ "Quản Lý" */
+  cursor: pointer;
+  color: white; /* Màu chữ */
+  margin-right: 20px; /* Khoảng cách giữa chữ và icon */
+  font-size: 0.7em;
+  text-decoration: none; /* Thêm các style khác nếu cần */
+}
+.product-text {
+  color: white; /* Màu chữ */
+  margin-right: 20px; /* Khoảng cách giữa chữ và icon */
+  font-size: 0.7em;
+  text-decoration: none;
+}
+.bill-text {
+  color: white; /* Màu chữ */
+  margin-right: 20px; /* Khoảng cách giữa chữ và icon */
+  font-size: 0.7em;
+  text-decoration: none;
+}
+.home-text {
+  color: white; /* Màu chữ */
+  margin-right: 20px; /* Khoảng cách giữa chữ và icon */
+  font-size: 0.7em;
+  text-decoration: none;
+}
+.search-input {
+  margin-right: 1200px;
+  height: 25px;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.main-contentn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sidebar-dm {
+  flex: 2;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  margin-left: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pagination {
+  margin-bottom: 15px;
+}
+/* sp */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  flex-grow: 1; /* Cho phép content phát triển để chiếm đủ không gian */
+  margin: 0 25px;
+}
+.product {
+  flex: 3;
+  border: 1px solid #ddd;
+  padding: 30px;
+  background-color: #fff;
+  place-items: center;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+.product .price {
+  font-size: 18px;
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+.product .name {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+/* hoadon */
+.order-summary {
+  width: 50%;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Khoảng cách giữa các mục */
+}
+
+.order-item span,
+.order-item input {
+  margin: 10px; /* Khoảng cách giữa các phần tử trong mỗi mục */
+}
+.input {
+  text-align: center; /* căn giữa số lượng */
+  width: 20px; /* Hoặc bạn có thể dùng chiều rộng khác phù hợp */
+}
+
+.order-total {
+  /* Định dạng cho phần tổng tiền */
+
+  border-top: 1px solid #ccc; /* Tạo đường viền phân cách */
+  padding-top: 10px; /* Khoảng cách phía trên */
+}
+.order-actions {
+  /* Định dạng cho các nút hành động */
+  display: flex;
+  justify-content: end; /* Định vị các nút */
+  margin-top: 10px; /* Khoảng cách giữa các nút và tổng tiền */
+}
+.x-btn {
+  border-radius: 20px; /* Điều chỉnh giá trị để thay đổi mức độ bo tròn */
+  padding: 5px 10px; /* Có thể điều chỉnh kích thước nút bằng cách thay đổi padding */
+  background-color: red; /* Màu nền của nút */
+  color: #ffffff; /* Màu chữ */
+  border: none; /* Loại bỏ đường viền */
+  cursor: pointer; /* Hiển thị con trỏ khi di chuột vào nút */
+}
+.delete-btn {
+  /* Định dạng riêng cho nút xóa */
+  background-color: red;
+  color: white;
+  margin-right: 15px;
+  border-radius: 10px;
+  text-align: left; /* Các mục được căn về phía bên trái */
+}
+.pay-btn {
+  /* Định dạng riêng cho nút thanh toán */
+  background-color: rgb(3, 186, 3);
+  color: white;
+  border-radius: 10px;
+}
+.delete-btn,
+.pay-btn {
+  /* Định dạng chung cho các nút */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Thêm một chút không gian giữa các trường nhập và phần tiếp theo */
+}
+
+.invoice-field {
+  display: flex;
+  flex-direction: column; /* Đặt nhãn trên cùng và trường nhập ở dưới */
+  margin-right: 15px; /* Thêm khoảng cách giữa các trường nhập nếu cần */
+}
+
+.invoice-field label {
+  margin-bottom: 5px; /* Thêm khoảng cách giữa nhãn và trường nhập */
+}
+
+.invoice-field input {
+  padding: 5px;
+  border: 1px solid #ccc; /* Đặt đường viền cho trường nhập */
+}
+
+/* quan ly */
+.dropdown-menu {
+  position: absolute;
+  left: 60%; /* Đặt bắt đầu của dropdown-menu vào giữa của manage-text */
+  transform: translateX(
+    -50%
+  ); /* Dịch chuyển dropdown-menu về phía trái nửa chiều rộng của nó để nó được căn giữa hoàn hảo */
+  top: 40px; /* Khoảng cách từ manage-text đến dropdown-menu */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none; /* Ẩn dropdown-menu cho đến khi được click */
+}
+.dropdown-menu.show {
+  display: block; /* Hiển thị dropdown-menu khi được click */
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.5em;
+  justify-content: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+/* thanh toán*/
+.payment-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-info-section,
+.payment-info-section {
+  width: 49%; /* Điều chỉnh cho phù hợp với tỉ lệ bạn muốn */
+  padding: 10px;
+  border: 1px solid #ddd; /* Để phân định rõ ràng giữa hai cột */
+  margin-top: 10px;
+}
+/* CSS cho nhãn (label) */
+/* target all labels */
+.lbl-id,
+.lbl-name,
+.lbl-phone {
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* target all input fields */
+.in-id,
+.in-name,
+.in-phone {
+  /* adjust the width as needed */
+  width: 200px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+.lbl-kh,
+.lbl-nv {
+  width: 150px;
+  display: inline-block;
+  text-align: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.in-kh,
+.in-nv {
+  width: auto;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+/* CSS cho button */
+.save-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgb(3, 186, 3);
+  color: white;
+  border-radius: 10px;
+}
+
+/* CSS cho form */
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+.notification {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
+
+.success-kh {
+  padding: 10px;
+  background-color: #dff0d8;
+  color: black;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.error-kh {
+  padding: 10px;
+  background-color: #f2dede;
+  color: red;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+.add-product-page {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar-product {
+  width: 20%; /* Đặt chiều rộng của sidebar là 40% */
+  height: 686px;
+  background-color: #e6b1d4; /* Màu nền cho sidebar */
+  padding: 20px; /* Thêm một chút padding nếu cần */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa logo và các thành phần khác nếu có */
+}
+
+.logo {
+  max-width: 100%; /* Đảm bảo logo không vượt qua kích thước của sidebar */
+  height: auto;
+}
+
+.add-product-form {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; /* Hoặc chiều rộng mà bạn muốn */
+  margin: auto; /* Nếu bạn muốn căn giữa form */
+}
+
+.group-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+
+.add-product-button {
+  border: none;
+  background-color: #e8bfe3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px; /* Bạn có thể thiết lập width cụ thể hoặc để nó tự động dựa vào nội dung */
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-left: 330px;
+}
+
+.add-product-button:hover {
+  background-color: #e88bdd;
+}
+.input-field {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

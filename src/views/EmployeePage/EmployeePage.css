@@ -1,0 +1,42 @@
+.employee {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.employee h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-addemployee {
+  color: white;
+  background-color: #a79cf3;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Thêm các thuộc tính sau để căn giữa nút */
+  display: block; /* Biến nút thành block level element */
+  margin: 0 auto; /* Tự động tính toán lề trái và phải */
+  margin-top: 20px; /* Thêm một chút khoảng cách ở trên, nếu bạn muốn */
+}
+
+.btn-editemployee,
+.btn-deleteemployee {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-editemployee {
+  background-color: #ffb347; /* Màu cam */
+}
+
+.btn-deleteemployee {
+  background-color: #ff6961; /* Màu đỏ */
+}

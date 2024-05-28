@@ -1,0 +1,57 @@
+.container-employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Sử dụng chiều cao nhìn thấy được của trình duyệt để căn giữa theo chiều dọc */
+  padding: 20px;
+}
+
+.App-logo-employee {
+  border-radius: 50%; /* Tạo ra hình tròn hoàn hảo */
+  /* Đảm bảo rằng kích thước của logo là bình đẳng theo chiều rộng và cao */
+  width: 100px; /* Hoặc bất kỳ kích thước nào bạn muốn */
+  height: 100px; /* Đây phải bằng với chiều rộng */
+  object-fit: cover; /* Đảm bảo hình ảnh phù hợp với kích thước mà không bị méo */
+}
+.edit-employee-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-group-employee {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group-employee label {
+  margin-right: 25px;
+  white-space: nowrap;
+}
+.form-group-employee input {
+  flex: 1; /* Input sẽ chiếm hết không gian còn lại */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-actions-employee {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.form-actions-employee button {
+  min-width: 100px;
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-actions-employee button:first-child {
+  background-color: #1167f1;
+  color: white;
+}
+.form-actions-employee button:last-child {
+  background-color: #1167f1;
+  color: white;
+}
